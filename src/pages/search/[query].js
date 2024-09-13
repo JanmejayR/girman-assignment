@@ -54,6 +54,7 @@ const SearchResults = () => {
         <section className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 place-items-center mt-16  sm:px-64 gap-8 ">
           {results.map((user) => (
             <UserCard
+               key={user._id}
               firstName={user.first_name}
               lastName={user.last_name}
               city={user.city}
